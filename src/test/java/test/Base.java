@@ -20,9 +20,6 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- * 
- * Mike was here
- *
  */
 
 package test;
@@ -34,9 +31,9 @@ class Base {
 
     protected void run() {
         double r = Math.random();
-        if (r < 0.05) {
+        if (r < 0.1) {
             fail("oops");
-        } else if (r < 0.1) {
+        } else if (r < 0.2) {
             throw new AssumptionViolatedException("skipping");
         }
     }
